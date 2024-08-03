@@ -85,6 +85,7 @@ If you are using any other application that uses SRT as a library, follow the
 description in that application; in the worst case, if no description is
 available, remember that the SRT API call to set the debug log level is:
 
+
     srt_setloglevel(LOG_DEBUG);
 
 (The `LOG_DEBUG` symbol is defined in the `<sys/syslog.h>` include file on
@@ -127,7 +128,10 @@ To record the PCAP file on POSIX-based systems, use the following command
 
 On Windows there's a similar solution, the Windump application.
 
-
+SERVICING MULTI DESTINATIONS
+ currently it is possible to service only one destination with SRT-LIVE-TRANSMIT.
+ It is better to support more than one at a time.
+ 
 ---
 
 
